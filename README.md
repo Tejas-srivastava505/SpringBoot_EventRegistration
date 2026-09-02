@@ -12,14 +12,6 @@ participants) at MIT Manipal.
 - MySQL
 - Maven
 
-> **Note:** this version writes all getters/setters explicitly instead
-> of using Lombok (`@Getter`/`@Setter`). Lombok requires annotation
-> processing to be correctly wired into the build, which is a common
-> source of "cannot find symbol: getX()" compile errors when it isn't
-> configured exactly right — not worth the risk this close to a
-> deadline. Explicit getters/setters are more verbose but guaranteed
-> to compile with zero extra config, and it's one less tool to have to
-> explain in an interview.
 
 ## Features
 - Create and list events, each with a capacity limit
@@ -86,10 +78,8 @@ curl -X PATCH http://localhost:8080/api/participants/1/checkin
 
 ---
 
-## Before an interview: things to actually understand
 
-Don't just skim this — these are the questions most likely to come up
-if this project is on your resume.
+
 
 ### 1. Walk through what happens when a POST request to register a
 participant comes in
