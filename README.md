@@ -29,6 +29,7 @@ participants) at MIT Manipal.
 - Mark a participant as checked in
 - Cancel a registration
 - Clean JSON error responses for not-found and validation failures
+- Swagger UI for testing every endpoint from the browser
 
 ## Setup
 
@@ -44,6 +45,10 @@ participants) at MIT Manipal.
    ```
    The API starts on `http://localhost:8080`. Tables are created
    automatically on first run (`ddl-auto=update`).
+4. Open **`http://localhost:8080/swagger-ui.html`** in your browser.
+   This gives you a page listing every endpoint, where you can fill in
+   fields and click "Execute" to send real requests — no curl, no
+   Postman needed. This is the easiest way to test everything below.
 
 ## API Endpoints
 
